@@ -1,0 +1,241 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0px;
+    min-width: 100vh;
+    overflow: auto;
+
+    .header{
+        width: 100%;
+        display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--title-color);
+    align-items: center;
+    flex-wrap: wrap;
+
+    .leftHeader{
+        display: flex;
+    align-items: center;
+
+        .logo{
+            height: 60px;
+
+        }
+
+        .companyName{
+            padding: 10px;
+            font-family: sans-serif;
+        font-style: oblique;
+        font-weight: 800;
+
+        }
+       
+    }
+    .rightHeader{
+        padding: 10px;
+        span{
+            font-size: 20px;
+            border-right: 1px solid var(--title-color);
+            padding: 0px 1vw;
+            // margin: 5px;
+        }
+        span:last-child{
+            border-right: none;
+        }
+    }
+
+
+    }
+
+    .footer{
+        width: 100%;
+       text-align: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--title-color);
+   
+
+    }
+
+    .mainContent{
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+
+       
+    // @media (min-width: 100px) and (max-width: 1600px) {
+        .branding{
+            background-image: url(../../assets/TLPSvgLogo.svg);
+            background-repeat: no-repeat;
+            // height: 500px;
+            min-width: 100vh;
+            min-height: 100vh;
+            background-size: contain;
+            background-color: black;
+            width: 100%;
+            background-position: center
+    
+        }
+    // }
+    // @media (min-width: 200px) and (max-width: 400px) {
+    //     .first{
+    //         background-image: url(../../assets/logowidth400.png);
+    //         background-repeat: no-repeat;
+    //         // height: 500px;
+    //         min-width: 100vh;
+    //         min-height: 100vh;
+    //         background-size: contain;
+    //         width: 100%;
+    
+    //     }
+    // }
+    // @media (min-width: 401px) and (max-width: 500px) {
+    //     .first{
+    //         background-image: url(../../assets/logowidth500.png);
+    //         background-repeat: no-repeat;
+    //         // height: 500px;
+    //         min-width: 100vh;
+    //         min-height: 100vh;
+    //         background-size: contain;
+    //         width: 100%;
+    
+    //     }
+    // }
+    // @media (min-width: 501px) and (max-width: 650px) {
+    //     .first{
+    //         background-image: url(../../assets/logowidth600.png);
+    //         background-repeat: no-repeat;
+    //         // height: 500px;
+    //         min-width: 100vh;
+    //         min-height: 100vh;
+    //         background-size: contain;
+    //         width: 100%;
+    
+    //     }
+    // }
+
+    // @media (min-width: 651px) and (max-width: 1200px) {
+    //     .first{
+    //         background-image: url(../../assets/logo.jpg);
+    //         background-repeat: no-repeat;
+    //         min-width: 100vh;
+    //         min-height: 100vh;
+    //         background-size: contain;
+    //         width: 100%;
+    //         // height: 500px;
+    
+    //     }
+    // }
+
+    // @media (min-width: 651px) and (max-width: 1600px) {
+    //     .first{
+    //         background-image: url(../../assets/logowidth1600.png);
+    //         background-repeat: no-repeat;
+    //         min-width: 100vh;
+    //         min-height: 100vh;
+    //         background-size: contain;
+    //         width: 100%;
+    //         // height: 500px;
+    
+    //     }
+    // }
+    
+        .services{
+            // min-height: 100vh;
+            // min-width: 100vw;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+
+            .serviceContainer{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--logo-color);
+                flex-direction: column;
+                margin: 10px;               
+                box-shadow: 5px 5px 3px 3px var(--title-color);
+                border-radius: 5px;       
+                    
+            .serviceTitle{
+                font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px;
+
+            }
+
+            .serviceImage1{
+                background-image: url(../../assets/engagement.heic);
+                background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 300px;
+                min-width: 300px;
+                flex-grow: 1;      
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .viewMore{
+                    display: none;
+                }
+
+            }
+
+            .serviceImage2{
+                background-image: url(../../assets/wedding2.webp);
+                background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 300px;
+                min-width: 300px;
+                flex-grow: 1;                       
+
+            }
+            .serviceImage3{
+                background-image: url(../../assets/birthday.jpg);
+                background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 300px;
+                min-width: 300px;
+                flex-grow: 1;                       
+
+            }
+            .serviceImage4{
+                background-image: url(../../assets/corporate.webp);
+                background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 300px;
+                min-width: 300px;
+                flex-grow: 1;                       
+
+            }
+
+        }
+
+        .serviceContainer:hover{
+            // opacity: 0.5;
+            transform: scale(0.95)
+        }
+
+        .serviceContainer:hover .viewMore{
+            display: block;
+        }
+    
+        }
+        
+
+    }
+
+    
+}
