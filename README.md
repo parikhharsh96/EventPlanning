@@ -1,2 +1,2 @@
 # EventPlanning
-Demo app for event planning website
+Demo Angular app for an event planning website
